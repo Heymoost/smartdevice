@@ -1,0 +1,355 @@
+.main-nav {
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+
+  @media (min-width: $vp-1920) {
+    min-height: 880px;
+    background-image: url("../img/desktop/device-desktop.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $vp-1024) {
+    min-height: 880px;
+    background-image: url("../img/desktop/device-desktop.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $vp-768) {
+    min-height: 640px;
+    background-image: url("../img/tablet/device-tablet.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $vp-320) {
+    min-height: 560px;
+    background-image: url("../img/mobile/device-mobile.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.main-nav__conteiner {
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @media (min-width: $vp-1024) {
+    height: 120px;
+  }
+
+  @media (min-width: $vp-768) {
+    height: 120px;
+  }
+
+  @media (min-width: $vp-320) {
+    height: 70px;
+  }
+}
+
+.main-nav__conteiner-desk {
+  align-items: center;
+  max-width: 1220px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  @media (min-width: $vp-320) {
+    display: none;
+  }
+}
+
+.main-nav__conteiner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f5f7;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "PT Mono", "Arial", sans-serif;
+}
+
+.main-nav__conteiner a:hover {
+  color: #00b3ff;
+}
+
+.main-nav__conteiner-mail {
+  @media (min-width: $vp-1024) {
+    margin-bottom: 5px;
+    margin-left: 45px;
+  }
+}
+
+.main-nav__conteiner-tel {
+  box-sizing: content-box;
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 5px;
+    margin-right: 50px;
+  }
+}
+
+.main-nav__conteiner svg {
+  fill: #00b2ff;
+  flex-shrink: 0;
+
+  @media (min-width: $vp-1024) {
+    margin-right: 15px;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $vp-320) {
+    margin-right: 0;
+  }
+}
+
+.main-nav__conteiner svg:hover {
+  fill: #f2f5f7;
+}
+
+.main-nav__button-call {
+  padding: 11px 16px;
+  color: #f2f5f7;
+  background: #041827;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #041827;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @media (min-width: $vp-1280) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  @media (min-width: $vp-320) {
+    display: none;
+  }
+}
+
+.main-nav__conteiner button:hover {
+  color: #041827;
+  background: #f2f5f7;
+}
+
+.main-nav__conteiner-tablet {
+  @media (min-width: $vp-1024) {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    padding: 20px 70px 35px 50px;
+  }
+
+  @media (min-width: $vp-320) {
+    display: flex;
+    align-items: center;
+    padding: 10px 35px 20px 26px;
+  }
+}
+
+.main-nav__conteiner-tablet img {
+  @media (min-width: $vp-768) {
+    width: 215px;
+    height: 55px;
+  }
+}
+
+.main-nav__conteiner-link {
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $vp-320) {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: auto;
+  }
+}
+
+.main-nav__conteiner-link a {
+  width: 40px;
+  height: 40px;
+}
+
+.main-nav__conteiner-link svg {
+  box-sizing: content-box;
+  padding: 10px;
+}
+
+
+.main-nav__text {
+  max-width: 1220px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-1024) {
+    padding: 185px 0 0 125px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 60px 0 0 50px;
+  }
+
+  @media (min-width: $vp-320) {
+    padding: 80px 26px 0 26px;
+  }
+}
+
+.main-nav__text h1 {
+  margin: 0;
+  color: #f2f5f7;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-1024) {
+    font-size: 80px;
+    line-height: 94px;
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (min-width: $vp-320) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.main-nav__text p {
+  margin: 0;
+  color: #f2f5f7;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%;
+  font-family: "PT Mono", "Arial", sans-serif;
+
+  @media (min-width: $vp-1024) {
+    max-width: 685px;
+    padding: 30px 0 50px 0;
+    font-size: 22px;
+  }
+
+  @media (min-width: $vp-768) {
+    min-width: 685px;
+    padding: 0 40px 57px 0;
+    font-size: 22px;
+  }
+
+  @media (min-width: $vp-320) {
+    padding-top: 10px;
+    padding-bottom: 51px;
+    font-size: 14px;
+  }
+}
+
+.main-nav__button {
+  color: #f2f5f7;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #00b2ff;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+
+  @media (min-width: $vp-1024) {
+    width: 410px;
+    height: 55px;
+    padding: 15px 25px;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $vp-768) {
+    display: block;
+    width: 410px;
+    height: 55px;
+    padding: 15px 25px;
+    margin-left: 45px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $vp-320) {
+    display: none;
+  }
+}
+
+.main-nav__button:hover {
+  color: #00b2ff;
+  background: #f2f5f7;
+}
+
+.main-nav__button-mobile {
+  color: #f2f5f7;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #00b2ff;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+
+  @media (min-width: $vp-1024) {
+    display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  @media (min-width: $vp-320) {
+    height: 40px;
+    padding: 12px 37px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.main-nav__button-mobile:hover {
+  color: #00b2ff;
+  background: #f2f5f7;
+}

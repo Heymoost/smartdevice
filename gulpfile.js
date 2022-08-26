@@ -87,10 +87,10 @@ const clean = () => {
 
 const syncServer = () => {
   server.init({
-    server: 'build/',
-    index: 'sitemap.html',
+    server: {
+      baseDir: 'build'
+    },
     notify: false,
-    open: true,
     cors: true,
     ui: false,
   });
@@ -113,24 +113,11 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js);
-
-const start = gulp.series(build, syncServer);
-
-// Optional tasks
-//---------------------------------
-
-// Используйте отличное от дефолтного значение root, если нужно обработать отдельную папку в img,
-// а не все изображения в img во всех папках.
-
-// root = '' - по дефолту webp добавляются и обновляются во всех папках в source/img/
-// root = 'content/' - webp добавляются и обновляются только в source/img/content/
-
 const createWebp = () => {
   const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+  return gulp.src(`source/img/**/*.{png,jpg}`)
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(`source/img/${root}`));
+    .pipe(gulp.dest(`source/img/`));
 };
 
 const optimizeImages = () => {
@@ -141,6 +128,19 @@ const optimizeImages = () => {
       ]))
       .pipe(gulp.dest('build/img'));
 };
+
+const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp, optimizeImages, syncServer);
+
+const start = gulp.series(clean, svgo, copy, css, sprite, js, syncServer);
+
+// Optional tasks
+//---------------------------------
+
+// Используйте отличное от дефолтного значение root, если нужно обработать отдельную папку в img,
+// а не все изображения в img во всех папках.
+
+// root = '' - по дефолту webp добавляются и обновляются во всех папках в source/img/
+// root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 exports.imagemin = optimizeImages;
 exports.webp = createWebp;

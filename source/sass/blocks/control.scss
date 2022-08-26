@@ -1,0 +1,91 @@
+.control {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  display: flex;
+  align-items: center;
+
+
+  @media (min-width: $vp-1024) {
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: $vp-320) {
+    margin: 0 auto;
+  }
+}
+
+.control__checkbox {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  background-color: #00b3ff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+
+  @media (min-width: $vp-1024) {
+    top: 23px;
+    left: 10px;
+  }
+
+  @media (min-width: $vp-768) {
+    top: 20px;
+    left: 0;
+  }
+
+  @media (min-width: $vp-320) {
+    top: 7px;
+    left: 5px;
+  }
+}
+
+input[type="checkbox"]:checked + .control__checkbox::before {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 7px;
+  border: 1px solid #ffffff;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.control__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-family: "PT Mono", "Arial", sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $vp-1024) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: 17px;
+  }
+
+  @media (min-width: $vp-320) {
+    padding-left: 30px;
+  }
+}
+
+.control__label:hover {
+  color: #0080ff;
+}
+
+.control__checkbox:hover {
+  border: solid 1px #0080ff;
+}
+

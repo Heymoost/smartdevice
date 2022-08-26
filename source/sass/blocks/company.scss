@@ -1,0 +1,167 @@
+.company {
+  display: flex;
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  @media (min-width: $vp-1024) {
+    padding: 120px 45px 116px 45px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 75px 50px 80px 52px;
+  }
+
+  @media (min-width: $vp-320) {
+    padding: 30px 25px 82px 25px;
+  }
+}
+
+.company img {
+  position: absolute;
+
+  @media (min-width: $vp-1024) {
+    display: block;
+    top: 120px;
+    left: 45px;
+    box-sizing: content-box;
+  }
+
+  @media (min-width: $vp-768) {
+    display: block;
+    top: 80px;
+    left: 45px;
+    box-sizing: content-box;
+  }
+
+  @media (min-width: $vp-320) {
+    display: none;
+  }
+}
+
+.company div {
+  box-sizing: content-box;
+
+  @media (min-width: $vp-1280) {
+    max-width: 970px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding-left: 250px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: 175px;
+  }
+}
+
+.company h2 {
+  margin: 0;
+  color: #041827;
+  font-style: normal;
+
+
+  @media (min-width: $vp-1024) {
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  @media (min-width: $vp-320) {
+    padding-bottom: 17px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 25px;
+  }
+}
+
+.company p {
+  margin: 0;
+  color: #041827;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+
+
+  @media (min-width: $vp-768) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media (min-width: $vp-320) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.company__mobile {
+  @media (min-width: $vp-768) {
+    padding-top: 5px;
+  }
+}
+
+.company__mobile-closed {
+  @media (min-width: $vp-768) {
+    display: block;
+  }
+
+  @media (min-width: $vp-320) {
+    display: none;
+  }
+}
+
+.company__more-none {
+  display: none;
+}
+
+.company button {
+
+  color: #00b2ff;
+  background: #e5e5e5;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #f8fdff;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @media (min-width: $vp-1024) {
+    width: 180px;
+    margin-top: 46px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 14px 13px 14px 13px;
+    width: 180px;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $vp-320) {
+    padding: 8px 13px 8px 13px;
+    width: 160px;
+    margin-top: 15px;
+  }
+}
+
+.company button:hover {
+  color: #e5e5e5;
+  background: #00b2ff;
+}
+
+.company__button-none {
+  display: none;
+}
+
