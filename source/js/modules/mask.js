@@ -1,10 +1,10 @@
-import IMask from 'imask';
+import iMask from 'imask';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const inputElement = document.querySelector('.tel');
+  const inputElement = document.getElementById('tel');
   const maskOptions = {
     mask: '+{7}(000)000-00-00',
   };
-  IMask (inputElement, maskOptions);
+  iMask(inputElement, maskOptions);
 });

@@ -7,12 +7,6 @@ footer {
   margin: 0 auto;
   box-sizing: content-box;
 
-  @media (min-width: $vp-1920) {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 45px 55px 45px;
-  }
-
   @media (min-width: $vp-1024) {
     display: flex;
     justify-content: space-between;
@@ -23,7 +17,7 @@ footer {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-column-gap: 30px;
-    grid-row-gap: 25px;
+    grid-row-gap: 20px;
     padding: 50px 45px 45px 50px;
   }
 

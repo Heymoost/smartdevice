@@ -21,7 +21,7 @@
   }
 }
 
-.contacts div {
+.contacts__title {
   position: relative;
 
   @media (min-width: $vp-320) {
@@ -46,7 +46,7 @@
   }
 }
 
-.contacts button {
+.contacts__button {
   margin-left: auto;
   border: none;
   color: transparent;
@@ -58,20 +58,20 @@
   }
 }
 
-.contacts-closed .contacts-button {
+.contacts--closed .contacts__button {
   @media (min-width: $vp-768) {
     display: none;
   }
 
   @media (min-width: $vp-320) {
     position: absolute;
-    top: 3px;
-    right: 26px;
+    top: -13px;
+    right: 10px;
     display: block;
     padding: 0;
-    width: 15px;
-    height: 15px;
-    background-color: #041827;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
     cursor: pointer;
     border: none;
 
@@ -79,8 +79,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
-      left: 0;
+      top: 20px;
+      right: 17px;
       width: 15px;
       height: 1px;
       background-color: #f8fdff;
@@ -102,13 +102,13 @@
   }
 }
 
-.contacts-closed .contacts-button:hover {
+.contacts--closed .contacts__button:hover {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: 20px;
+    right: 17px;
     width: 15px;
     height: 1px;
     background-color: #00b2ff;
@@ -130,20 +130,20 @@
 }
 
 
-.contacts-oppened .contacts-button {
+.contacts--oppened .contacts__button {
   @media (min-width: $vp-768) {
     display: none;
   }
 
   @media (min-width: $vp-320) {
     position: absolute;
-    top: 3px;
-    right: 26px;
+    top: -13px;
+    right: 10px;
     display: block;
     padding: 0;
-    width: 15px;
-    height: 15px;
-    background-color: #041827;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
     cursor: pointer;
     border: none;
 
@@ -151,8 +151,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
-      left: 0;
+      top: 20px;
+      right: 17px;
       width: 15px;
       height: 1px;
       background-color: #f8fdff;
@@ -170,13 +170,13 @@
   }
 }
 
-.contacts-oppened .contacts-button:hover {
+.contacts--oppened .contacts__button:hover {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: 20px;
+    right: 17px;
     width: 15px;
     height: 1px;
     background-color: #00b2ff;
@@ -193,7 +193,7 @@
   }
 }
 
-.contacts ul {
+.contacts__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -203,25 +203,20 @@
   }
 
   @media (min-width: $vp-320) {
+    display: none;
     box-sizing: content-box;
     min-height: 150px;
     padding-top: 20px;
   }
 }
 
-.contacts-closed ul {
-  @media (min-width: $vp-320) {
-    display: none;
-  }
-}
-
-.contacts-oppened ul {
+.contacts--oppened .contacts__list {
   @media (min-width: $vp-320) {
     display: block;
   }
 }
 
-.contacts li {
+.contacts__list-item {
   @media (min-width: $vp-1024) {
     padding-bottom: 5px;
   }
@@ -258,7 +253,7 @@
   }
 }
 
-.contacts a {
+.contacts__list-link {
   color: rgba(255, 255, 255, 0.7);
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -278,11 +273,11 @@
   }
 }
 
-.contacts a:hover {
+.contacts__list-link:hover {
   color: #00b2ff;
 }
 
-.contacts-closed--nojs ul {
+.contacts--closed--nojs .contacts__list {
   @media (min-width: $vp-320) {
     display: block;
   }

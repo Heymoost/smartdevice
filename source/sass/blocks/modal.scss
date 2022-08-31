@@ -7,10 +7,10 @@
   height: 630px;
   background: #00b3ff;
   border-radius: 3px;
-  z-index: 3;
+  z-index: 20;
 }
 
-.modal-button {
+.modal__button {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -20,6 +20,7 @@
   background-color: #00b3ff;
   border: none;
   cursor: pointer;
+
 
   &::before,
   &::after {
@@ -44,6 +45,33 @@
   &:active::before,
   &:active::after {
     background-color: fade(#ffffff, 30%);
+  }
+}
+
+.modal__button:hover {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 9px;
+    width: 20px;
+    height: 1px;
+    background-color: #041827;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#041827, 30%);
   }
 }
 
@@ -94,7 +122,7 @@
   border-radius: 3px;
 }
 
-.modal__input {
+.modal__input input {
   width: 100%;
 }
 
@@ -136,13 +164,27 @@
   cursor: pointer;
 }
 
-.modal-control {
+.modal__button-form:hover {
+  color: #041827;
+  background: #f2f5f7;
+}
+
+.modal__control {
   display: flex;
   align-items: center;
   margin: 0 auto;
 }
 
-.modal-control__checkbox {
+.modal__control input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.modal__control-checkbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -155,7 +197,7 @@
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + .modal-control__checkbox::before {
+input[type="checkbox"]:checked + .modal__control-checkbox::before {
   position: absolute;
   top: 2px;
   left: 5px;
@@ -167,7 +209,7 @@ input[type="checkbox"]:checked + .modal-control__checkbox::before {
   content: "";
 }
 
-.modal-control__label {
+.modal__control-label {
   padding-left: 35px;
   font-style: normal;
   font-weight: 400;
@@ -179,6 +221,14 @@ input[type="checkbox"]:checked + .modal-control__checkbox::before {
   cursor: pointer;
 }
 
-.modal-closed {
+.modal__control-checkbox:hover {
+  border: solid 1px #0080ff;
+}
+
+.modal__control-label:hover {
+  color: #0080ff;
+}
+
+.modal--closed {
   display: none;
 }

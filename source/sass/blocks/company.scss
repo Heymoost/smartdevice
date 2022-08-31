@@ -14,11 +14,11 @@
   }
 
   @media (min-width: $vp-320) {
-    padding: 30px 25px 82px 25px;
+    padding: 40px 25px 82px 25px;
   }
 }
 
-.company img {
+.company__img {
   position: absolute;
 
   @media (min-width: $vp-1024) {
@@ -40,7 +40,7 @@
   }
 }
 
-.company div {
+.company__conteiner {
   box-sizing: content-box;
 
   @media (min-width: $vp-1280) {
@@ -60,7 +60,6 @@
   margin: 0;
   color: #041827;
   font-style: normal;
-
 
   @media (min-width: $vp-1024) {
     padding-bottom: 10px;
@@ -89,7 +88,6 @@
   color: #041827;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
-
 
   @media (min-width: $vp-768) {
     font-weight: 400;
@@ -125,11 +123,10 @@
 }
 
 .company button {
-
   color: #00b2ff;
   background: #e5e5e5;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -140,7 +137,7 @@
 
   @media (min-width: $vp-1024) {
     width: 180px;
-    margin-top: 46px;
+    margin-top: 39px;
   }
 
   @media (min-width: $vp-768) {
@@ -152,7 +149,7 @@
   @media (min-width: $vp-320) {
     padding: 8px 13px 8px 13px;
     width: 160px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
 

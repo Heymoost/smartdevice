@@ -1,8 +1,4 @@
 .social {
-  @media (min-width: $vp-1920) {
-    display: block;
-  }
-
   @media (min-width: $vp-1024) {
     display: block;
   }
@@ -18,17 +14,19 @@
   }
 }
 
-.social img {
+.social__img {
   @media (min-width: $vp-768) {
     margin: 0;
   }
 
   @media (min-width: $vp-320) {
+    width: 215px;
+    height: 55px;
     margin: 0 auto;
   }
 }
 
-.social ul {
+.social__list {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
