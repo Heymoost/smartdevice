@@ -11,7 +11,7 @@
 
   @media (min-width: $vp-768) {
     padding-top: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
   }
 
   @media (min-width: $vp-320) {
@@ -28,17 +28,17 @@
 
   @media (min-width: $vp-1024) {
     top: 23px;
-    left: 10px;
+    left: -3px;
   }
 
   @media (min-width: $vp-768) {
     top: 20px;
-    left: 0;
+    left: -25px;
   }
 
   @media (min-width: $vp-320) {
     top: 7px;
-    left: 5px;
+    left: -11px;
   }
 }
 
@@ -54,17 +54,17 @@
 
   @media (min-width: $vp-1024) {
     top: 23px;
-    left: 10px;
+    left: -3px;
   }
 
   @media (min-width: $vp-768) {
     top: 20px;
-    left: 0;
+    left: -25px;
   }
 
   @media (min-width: $vp-320) {
     top: 7px;
-    left: 5px;
+    left: -11px;
   }
 }
 
@@ -91,15 +91,17 @@ input[type="checkbox"]:checked + .control__checkbox::before {
   cursor: pointer;
 
   @media (min-width: $vp-1024) {
-    padding-left: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
   }
 
   @media (min-width: $vp-768) {
-    padding-left: 17px;
+    padding-left: 0;
   }
 
   @media (min-width: $vp-320) {
-    padding-left: 30px;
+    max-width: 240px;
+    padding-left: 15px;
   }
 }
 

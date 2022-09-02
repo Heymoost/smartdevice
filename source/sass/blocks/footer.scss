@@ -10,15 +10,15 @@ footer {
   @media (min-width: $vp-1024) {
     display: flex;
     justify-content: space-between;
-    padding: 50px 45px 55px 45px;
+    padding: 50px 40px 55px 45px;
   }
 
   @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: 48% 48%;
     grid-column-gap: 30px;
-    grid-row-gap: 20px;
-    padding: 50px 45px 45px 50px;
+    grid-row-gap: 25px;
+    padding: 50px 45px 65px 50px;
   }
 
   @media (min-width: $vp-320) {

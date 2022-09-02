@@ -22,12 +22,14 @@
         <div class="main-nav">
           <div class="main-nav__conteiner">
             <div class="main-nav__conteiner-block">
-              <!-- 1х: 35px; 2x: 70px -->
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg 1x, img/svg/logo-desktop@2x.svg 2x">
-                <source type="image/webp" srcset="img/svg/logo-mobile.svg 1x, img/svg/logo-mobile@2x.svg 2x">
-                <img class="main-nav__conteiner-img" src="img/svg/logo-mobile.svg" srcset="img/svg/logo-mobile@2x.svg 2x" width="35" height="35" alt="Логотип сайта 'Smart Device'.">
-              </picture>
+              <div class="logo">
+                <!-- 1х: 35px; 2x: 70px -->
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg 1x, img/svg/logo-desktop@2x.svg 2x">
+                  <source type="image/webp" srcset="img/svg/logo-mobile.svg 1x, img/svg/logo-mobile@2x.svg 2x">
+                  <img src="img/svg/logo-mobile.svg" srcset="img/svg/logo-mobile@2x.svg 2x" width="35" height="35" alt="Логотип сайта 'Smart Device'.">
+                </picture>
+              </div>
               <div class="main-nav__conteiner-link">
                 <a href="mailto:info@sd.ru" class="main-nav__conteiner-mail">
                   <svg width="20" height="20" viewBox="0 0 20 20">
@@ -48,8 +50,10 @@
           <div class="main-nav__text">
             <h1>Печатные платы</h1>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="main-nav__button" href="#feedback">Получить бесплатную консультацию</a>
-            <a class="main-nav__button-mobile" href="#feedback">Бесплатная консультация</a>
+            <a class="main-nav__button" href="#feedback">
+              <span class="main-nav__btn">Получить бесплатную консультацию</span>
+              <span class="main-nav__btn-mobile">Бесплатная консультация</span>
+            </a>
           </div>
         </div>
       </header>
@@ -87,18 +91,27 @@
           </ul>
         </div>
         <div class="company">
-          <!-- 1х: 320px; 2x: 640px -->
-          <img class="company__img" src="img/desktop/year-desktop.webp" srcset="img/desktop/year-desktop@2x.webp 2x" loading="lazy" width="150" height="320" alt="Текущий год.">
-          <div class="company__conteiner">
-            <h2>О компании</h2>
-            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>&nbsp;<p>Наши поставщики - мировые производители электронных компонентов: &nbsp;OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
-            <div class="company__mobile company__mobile-closed">
-              <p>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <div class="company__list">
+            <!-- 1х: 320px; 2x: 640px -->
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/desktop/year-desktop.webp 1x, img/desktop/year-desktop@2x.webp 2x">
+              <img src="img/desktop/year-desktop.png" srcset="img/desktop/year-desktop@2x.svg 2x" loading="lazy" width="150" height="320" alt="Текущий год.">
+            </picture>
+            <div class="company__conteiner">
+              <h2>О компании</h2>
+              <div class="company__main">
+                <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+              </div>
+              <p>Наши поставщики - мировые производители электронных компонентов: &nbsp;OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
+              <div class="company__mobile company__mobile-closed">
+                <p>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+              </div>
+              <div class="company__more company__more-none">
+                <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
+                <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+              </div>
+              <button class="company__button closed" type="button">Подробнее</button>
             </div>
-            <div class="company__more company__more-none">
-              <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>&nbsp;<p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
-            </div>
-            <button class="company__button closed" type="button">Подробнее</button>
           </div>
         </div>
         <div class="products">
@@ -111,15 +124,15 @@
             </div>
             <div class="products__list">
               <a href="#" class="products__list-production">
-                <h4>Производство печатных плат</h4>
+                <h3>Производство печатных плат</h3>
                 <span class="products__list-btn"></span>
               </a>
               <a href="#" class="products__list-mounting">
-                <h4>Монтаж печатных плат</h4>
+                <h3>Монтаж печатных плат</h3>
                 <span class="products__list-btn"></span>
               </a>
               <a href="#" class="products__list-components">
-                <h4>Комплектующие для светотехники</h4>
+                <h3>Комплектующие для светотехники</h3>
                 <span class="products__list-btn"></span>
               </a>
             </div>
@@ -127,10 +140,15 @@
         </div>
         <div id="feedback" class="feedback">
           <!-- 1х: 1000px; 2x: 2000px -->
-          <img class="feedback__img" src="img/svg/polygon.png" srcset="img/svg/polygon@2x.png 2x" width="1000" height="935" alt="Заливка.">
+          <div class="feedback__img">
+            <img src="img/svg/polygon.svg" width="1000" height="935" alt="Заливка.">
+          </div>
           <div class="feedback__conteiner">
             <!-- 1х: 510px; 2x: 1200px -->
-            <img class="feedback__form-img" src="img/desktop/airplane-desktop.webp" srcset="img/desktop/airplane-desktop@2x.webp 2x" loading="lazy" width="510" height="285" alt="Письмо обратной связи.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop/airplane-desktop.webp 1x, img/desktop/airplane-desktop@2x.webp 2x">
+              <img src="img/desktop/airplane-desktop.png" srcset="img/desktop/airplane-desktop@2x.svg 2x" loading="lazy" width="510" height="285" alt="Письмо обратной связи.">
+            </picture>
             <form action="https://echo.htmlacademy.ru/" method="get" name="form" autocomplete="off">
               <h2>Остались вопросы? Задайте их нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
@@ -144,9 +162,11 @@
                   <input id="tel" placeholder="Телефон" type="tel" name="tel" required>
                 </label>
               </div>
-              <label>
-                <textarea placeholder="Ваш вопрос" name="ask" cols="30" rows="10"></textarea>
-              </label>
+              <div class="feedback__textarea">
+                <label>
+                  <textarea placeholder="Ваш вопрос" name="ask" cols="30" rows="10"></textarea>
+                </label>
+              </div>
               <button class="feedback__btn" type="submit">Задать вопрос</button>
               <label class="control">
                 <input type="checkbox" name="data" checked required>
@@ -160,11 +180,13 @@
       <footer>
         <div class="footer-conteiner">
           <div class="social">
-            <!-- 1х: 215px; 2x: 530px -->
-            <picture>
-              <source type="image/webp" srcset="img/svg/logo-desktop.svg 1x, img/svg/logo-desktop@2x.svg 2x">
-              <img class="social__img" src="img/svg/logo-desktop.svg" srcset="img/svg/logo-desktop@2x.svg 2x" width="215" height="55" alt="Логотип сайта 'Smart Device'.">
-            </picture>
+            <div class="logo logo--footer">
+              <!-- 1х: 215px; 2x: 530px -->
+              <picture>
+                <source type="image/webp" srcset="img/svg/logo-desktop.svg 1x, img/svg/logo-desktop@2x.svg 2x">
+                <img src="img/svg/logo-desktop.svg" srcset="img/svg/logo-desktop@2x.svg 2x" width="215" height="55" alt="Логотип сайта 'Smart Device'.">
+              </picture>
+            </div>
             <ul class="social__list">
               <li class="social__pinterest">
                 <a href="#">
@@ -189,10 +211,10 @@
               </li>
             </ul>
           </div>
-          <div class="link link--closed link--closed--nojs">
+          <div class="link accord link--closed--nojs">
             <div class="link__title">
               <h4>Разделы сайта</h4>
-              <button class="link__button" type="button"><span class="visually-hidden">Раскрыть меню</span></button>
+              <button class="link__button btn" type="button"><span class="visually-hidden">Раскрыть меню</span></button>
             </div>
             <ul class="link__list">
               <li class="link__list-item">
@@ -218,25 +240,25 @@
               </li>
             </ul>
           </div>
-          <div class="contacts contacts--closed contacts--closed--nojs">
+          <div class="contacts accord contacts--closed--nojs">
             <div class="contacts__title">
               <h4>Наш офис</h4>
-              <button class="contacts__button" type="button"><span class="visually-hidden">Раскрыть меню</span></button>
+              <button class="contacts__button btn" type="button"><span class="visually-hidden">Раскрыть меню</span></button>
             </div>
-            <ul class="contacts__list">
-              <li class="contacts__list-item">
-                <p>г. Мытищи, Олимпийский проспект, д.10</p>
-              </li>
-              <li class="contacts__list-item">
-                <a class="contacts__list-link" href="tel:+74954894050">+7 (495) 589-40-50</a>
-              </li>
-              <li class="contacts__list-item">
-                <a class="contacts__list-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
-              </li>
-              <li class="contacts__list-item">
-                <a class="contacts__list-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
-              </li>
-            </ul>
+              <ul class="contacts__list">
+                <li class="contacts__list-item">
+                  <p>г. Мытищи, Олимпийский проспект, д.10</p>
+                </li>
+                <li class="contacts__list-item">
+                  <a class="contacts__list-link" href="tel:+74954894050">+7 (495) 589-40-50</a>
+                </li>
+                <li class="contacts__list-item">
+                  <a class="contacts__list-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                </li>
+                <li class="contacts__list-item">
+                  <a class="contacts__list-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                </li>
+              </ul>
           </div>
         </div>
       </footer>
@@ -255,9 +277,11 @@
               <input id="telmodal" placeholder="Телефон" type="tel" name="phone" required>
             </label>
           </div>
-          <label>
-            <textarea placeholder="Ваш вопрос" name="ask" cols="30" rows="10"></textarea>
-          </label>
+          <div class="modal__textarea">
+            <label>
+              <textarea placeholder="Ваш вопрос" name="ask" cols="30" rows="10"></textarea>
+            </label>
+          </div>
           <button class="modal__button-form" type="submit">Отправить</button>
           <label class="modal__control">
             <input type="checkbox" name="data" checked required>

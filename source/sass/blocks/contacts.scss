@@ -2,8 +2,9 @@
   grid-column: 2 / -1;
   grid-row: 2 / 3;
 
+
   @media (min-width: $vp-1024) {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   @media (min-width: $vp-768) {
@@ -18,6 +19,7 @@
     justify-content: space-between;
     padding: 22px 5px 20px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    cursor: pointer;
   }
 }
 
@@ -58,7 +60,7 @@
   }
 }
 
-.contacts--closed .contacts__button {
+.accord--closed .contacts__button {
   @media (min-width: $vp-768) {
     display: none;
   }
@@ -102,7 +104,7 @@
   }
 }
 
-.contacts--closed .contacts__button:hover {
+.accord--closed .contacts__button:hover {
   &::before,
   &::after {
     content: "";
@@ -130,7 +132,7 @@
 }
 
 
-.contacts--oppened .contacts__button {
+.accord--oppened .contacts__button {
   @media (min-width: $vp-768) {
     display: none;
   }
@@ -170,7 +172,7 @@
   }
 }
 
-.contacts--oppened .contacts__button:hover {
+.accord--oppened .contacts__button:hover {
   &::before,
   &::after {
     content: "";
@@ -198,6 +200,10 @@
   padding: 0;
   list-style-type: none;
 
+  @media (min-width: $vp-1024) {
+    padding-top: 25px;
+  }
+
   @media (min-width: $vp-768) {
     display: block;
   }
@@ -210,7 +216,7 @@
   }
 }
 
-.contacts--oppened .contacts__list {
+.accord--oppened .contacts__list {
   @media (min-width: $vp-320) {
     display: block;
   }

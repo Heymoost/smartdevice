@@ -8,7 +8,7 @@
   box-sizing: content-box;
 
   @media (min-width: $vp-1024) {
-    padding: 70px 45px 140px 45px;
+    padding: 70px 45px 140px 55px;
   }
 
   @media (min-width: $vp-768) {
@@ -190,7 +190,7 @@
   background: #00b2ff;
 }
 
-.products h4 {
+.products h3 {
   width: 230px;
   margin: 0;
 

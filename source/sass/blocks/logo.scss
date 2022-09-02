@@ -1,0 +1,28 @@
+.logo img {
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-768) {
+    width: 215px;
+    height: 55px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $vp-320) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.logo--footer img {
+  @media (min-width: $vp-768) {
+    margin: 0;
+  }
+
+  @media (min-width: $vp-320) {
+    width: 215px;
+    height: 55px;
+    margin: 0 auto;
+  }
+}
