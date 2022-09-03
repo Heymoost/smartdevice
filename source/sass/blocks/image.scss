@@ -1,0 +1,20 @@
+.image img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+
+  @media (min-width: $vp-1024) {
+    max-height: 650px;
+    min-height: 650px;
+  }
+
+  @media (min-width: $vp-768) {
+    max-height: 250px;
+    min-height: 250px;
+  }
+
+  @media (min-width: $vp-320) {
+    min-height: 250px;
+  }
+}

@@ -8,7 +8,7 @@
   box-sizing: content-box;
 
   @media (min-width: $vp-1024) {
-    padding: 70px 45px 140px 55px;
+    padding: 70px 45px 140px 60px;
   }
 
   @media (min-width: $vp-768) {
@@ -97,107 +97,40 @@
   }
 }
 
-.products__list-production {
+.products__list-item {
   position: relative;
-  background: #0477a8;
+  background: #00b2ff;
   cursor: pointer;
+  z-index: 1;
 
   @media (min-width: $vp-1024) {
     min-height: 650px;
-    background-image: url("../img/desktop/production-desktop.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
   }
 
   @media (min-width: $vp-768) {
     min-height: 250px;
-    background-image: url("../img/tablet/production-tablet.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
   }
 
   @media (min-width: $vp-320) {
     min-height: 250px;
-    background-image: url("../img/mobile/production-mobile.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
   }
 }
 
-.products__list-production:hover {
+.products__list-item:hover .products__list-img {
   background: #00b2ff;
+  display: none;
 }
 
-.products__list-mounting {
-  position: relative;
-  background: #0477a8;
-  cursor: pointer;
-
-  @media (min-width: $vp-1024) {
-    min-height: 650px;
-    background-image: url("../img/desktop/mounting-desktop.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  @media (min-width: $vp-768) {
-    min-height: 250px;
-    background-image: url("../img/tablet/mounting-tablet.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  @media (min-width: $vp-320) {
-    min-height: 250px;
-    background-image: url("../img/mobile/mounting-mobile.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-}
-
-.products__list-mounting:hover {
-  background: #00b2ff;
-}
-
-.products__list-components {
-  position: relative;
-  background: #0477a8;
-  cursor: pointer;
-
-  @media (min-width: $vp-1024) {
-    min-height: 650px;
-    background-image: url("../img/desktop/components-desktop.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  @media (min-width: $vp-768) {
-    min-height: 250px;
-    background-image: url("../img/tablet/components-tablet.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  @media (min-width: $vp-320) {
-    min-height: 250px;
-    background-image: url("../img/mobile/components-mobile.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-}
-
-.products__list-components:hover {
-  background: #00b2ff;
-}
 
 .products h3 {
+  position: relative;
   width: 230px;
   margin: 0;
-
   color: #ffffff;
+  z-index: 1;
 
   @media (min-width: $vp-1024) {
-    padding: 45px 35px 0 40px;
+    padding: 50px 30px 0 45px;
   }
 
   @media (min-width: $vp-768) {
@@ -217,7 +150,7 @@
 
 .products__list-btn {
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   right: 0;
   color: transparent;
   background: #00b2ff;

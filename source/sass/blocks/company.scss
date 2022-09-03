@@ -116,12 +116,6 @@
   }
 }
 
-.company__mobile {
-  @media (min-width: $vp-768) {
-    padding-top: 5px;
-  }
-}
-
 .company__mobile-closed {
   @media (min-width: $vp-768) {
     display: block;

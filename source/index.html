@@ -25,9 +25,9 @@
               <div class="logo">
                 <!-- 1х: 35px; 2x: 70px -->
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg 1x, img/svg/logo-desktop@2x.svg 2x">
-                  <source type="image/webp" srcset="img/svg/logo-mobile.svg 1x, img/svg/logo-mobile@2x.svg 2x">
-                  <img src="img/svg/logo-mobile.svg" srcset="img/svg/logo-mobile@2x.svg 2x" width="35" height="35" alt="Логотип сайта 'Smart Device'.">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg 1x">
+                  <source type="image/webp" srcset="img/svg/logo-mobile.svg 1x">
+                  <img src="img/svg/logo-mobile.svg" width="35" height="35" alt="Логотип сайта 'Smart Device'.">
                 </picture>
               </div>
               <div class="main-nav__conteiner-link">
@@ -71,7 +71,7 @@
               <svg class="advantages__item-svg" width="35" height="35" viewBox="0 0 35 35">
                 <use xlink:href="img/sprite_auto.svg#hired"></use>
               </svg>
-              <h3>Крупные поставщики&nbsp;</h3>
+              <h3>Крупные поставщики</h3>
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
             </li>
             <li class="advantages__item">
@@ -79,14 +79,14 @@
                 <use xlink:href="img/sprite_auto.svg#detective"></use>
               </svg>
               <h3>Полная конфиденциальность</h3>
-              <p>По желанию клиента &nbsp;мы обеспечиваем полную конфиденциальность.</p>
+              <p>По желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
             </li>
             <li class="advantages__item">
               <svg class="advantages__item-svg" width="35" height="35" viewBox="0 0 35 35">
                 <use xlink:href="img/sprite_auto.svg#tag"></use>
               </svg>
               <h3>Персонализация стоимости</h3>
-              <p>Мы &nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
           </ul>
         </div>
@@ -95,7 +95,7 @@
             <!-- 1х: 320px; 2x: 640px -->
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="img/desktop/year-desktop.webp 1x, img/desktop/year-desktop@2x.webp 2x">
-              <img src="img/desktop/year-desktop.png" srcset="img/desktop/year-desktop@2x.svg 2x" loading="lazy" width="150" height="320" alt="Текущий год.">
+              <img src="img/desktop/year-desktop.png" srcset="img/desktop/year-desktop@2x.png 2x" loading="lazy" width="150" height="320" alt="Текущий год.">
             </picture>
             <div class="company__conteiner">
               <h2>О компании</h2>
@@ -103,12 +103,9 @@
                 <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
               </div>
               <p>Наши поставщики - мировые производители электронных компонентов: &nbsp;OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
-              <div class="company__mobile company__mobile-closed">
-                <p>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-              </div>
+              <p><span class="company__mobile company__mobile-closed">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
               <div class="company__more company__more-none">
-                <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
-                <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+                <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия. Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
               </div>
               <button class="company__button closed" type="button">Подробнее</button>
             </div>
@@ -123,16 +120,37 @@
               <h2>Товары и услуги Smart Device</h2>
             </div>
             <div class="products__list">
-              <a href="#" class="products__list-production">
+              <a href="#" class="products__list-item">
                 <h3>Производство печатных плат</h3>
+                <div class="products__list-img image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop/production-desktop.webp 1x, img/desktop/production-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/production-tablet.webp 1x, img/tablet/production-tablet@2x.webp 2x">
+                    <img src="img/mobile/production-mobile.png" srcset="img/mobile/production-mobile@2x.png 2x" loading="lazy" width="270" height="250" alt="Услуга 'Производство печатных плат'.">
+                  </picture>
+                </div>
                 <span class="products__list-btn"></span>
               </a>
-              <a href="#" class="products__list-mounting">
+              <a href="#" class="products__list-item">
                 <h3>Монтаж печатных плат</h3>
+                <div class="products__list-img image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop/mounting-desktop.webp 1x, img/desktop/mounting-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/mounting-tablet.webp 1x, img/tablet/mounting-tablet@2x.webp 2x">
+                    <img src="img/mobile/mounting-mobile.png" srcset="img/mobile/mounting-mobile@2x.png 2x" loading="lazy" width="270" height="250" alt="Услуга 'Монтаж печатных плат'.">
+                  </picture>
+                </div>
                 <span class="products__list-btn"></span>
               </a>
-              <a href="#" class="products__list-components">
+              <a href="#" class="products__list-item">
                 <h3>Комплектующие для светотехники</h3>
+                <div class="products__list-img image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="img/desktop/components-desktop.webp 1x, img/desktop/components-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/components-tablet.webp 1x, img/tablet/components-tablet@2x.webp 2x">
+                    <img src="img/mobile/components-mobile.png" srcset="img/mobile/components-mobile@2x.png 2x" loading="lazy" width="270" height="250" alt="Услуга 'Комплектующие для светотехники'.">
+                  </picture>
+                </div>
                 <span class="products__list-btn"></span>
               </a>
             </div>
@@ -183,8 +201,8 @@
             <div class="logo logo--footer">
               <!-- 1х: 215px; 2x: 530px -->
               <picture>
-                <source type="image/webp" srcset="img/svg/logo-desktop.svg 1x, img/svg/logo-desktop@2x.svg 2x">
-                <img src="img/svg/logo-desktop.svg" srcset="img/svg/logo-desktop@2x.svg 2x" width="215" height="55" alt="Логотип сайта 'Smart Device'.">
+                <source type="image/webp" srcset="img/svg/logo-desktop.svg 1x">
+                <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип сайта 'Smart Device'.">
               </picture>
             </div>
             <ul class="social__list">
