@@ -3,7 +3,7 @@
   background: #00b3ff;
 }
 
-.feedback__img {
+.feedback__img img {
   position: absolute;
   z-index: 0;
 
@@ -16,9 +16,10 @@
 
   @media (min-width: $vp-1280) {
     display: block;
-    top: -80px;
-    width: 650px;
-    height: 920px;
+    top: -155px;
+    left: -18px;
+    width: 800px;
+    height: 935px;
   }
 
   @media (min-width: $vp-320) {
@@ -49,6 +50,7 @@
 
 .feedback__conteiner img {
   position: relative;
+  height: auto;
   z-index: 0;
 
   @media (min-width: $vp-1024) {

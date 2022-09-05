@@ -23,14 +23,18 @@
 
   @media (min-width: $vp-1024) {
     min-height: 880px;
+
   }
 
   @media (min-width: $vp-768) {
     min-height: 640px;
+
   }
 
   @media (min-width: $vp-320) {
     min-height: 560px;
+
+
   }
 }
 
@@ -40,7 +44,7 @@
 
   @media (min-width: $vp-1024) {
     position: fixed;
-    z-index: 3;
+    z-index: 2;
   }
 
   @media (min-width: $vp-320) {
