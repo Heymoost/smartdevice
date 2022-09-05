@@ -63,7 +63,7 @@
   @media (min-width: $vp-1024) {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+
     height: 100%;
     padding: 30px 45px 40px 45px;
   }
@@ -206,6 +206,10 @@
 
 .main-nav__conteiner-block svg:hover {
   fill: #f2f5f7;
+}
+
+.main-nav__button-box {
+  
 }
 
 .main-nav__button-call {

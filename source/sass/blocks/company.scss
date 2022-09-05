@@ -106,7 +106,7 @@
   }
 }
 
-.company__main p:first-child {
+.company__main p {
   @media (min-width: $vp-768) {
     margin-bottom: 25px;
   }
@@ -145,13 +145,12 @@
 
   @media (min-width: $vp-1024) {
     width: 180px;
-    margin-top: 39px;
+    margin-top: 14px;
   }
 
   @media (min-width: $vp-768) {
     padding: 14px 13px 14px 13px;
     width: 180px;
-    margin-top: 18px;
   }
 
   @media (min-width: $vp-320) {

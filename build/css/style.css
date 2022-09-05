@@ -63,6 +63,10 @@ body {
   background-color: #ffffff;
 }
 
+main {
+  margin-bottom: auto;
+}
+
 a {
   color: #000000;
   text-decoration: none;
@@ -1485,7 +1489,7 @@ footer {
     line-height: 19px;
   }
 
-  .company__main p:first-child {
+  .company__main p {
     margin-bottom: 20px;
   }
 
@@ -2054,7 +2058,7 @@ footer {
     line-height: 21px;
   }
 
-  .company__main p:first-child {
+  .company__main p {
     margin-bottom: 25px;
   }
 
@@ -2065,7 +2069,6 @@ footer {
   .company button {
     padding: 14px 13px 14px 13px;
     width: 180px;
-    margin-top: 18px;
   }
 
   .products__conteiner {
@@ -2315,8 +2318,6 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
     height: 100%;
     padding: 30px 45px 40px 45px;
   }
@@ -2429,7 +2430,7 @@ footer {
 
   .company button {
     width: 180px;
-    margin-top: 39px;
+    margin-top: 14px;
   }
 
   .products__conteiner {
