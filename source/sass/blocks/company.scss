@@ -10,15 +10,15 @@
   box-sizing: content-box;
 
   @media (min-width: $vp-1024) {
-    padding: 120px 20px 116px 45px;
+    padding: 120px 20px 121px 65px;
   }
 
   @media (min-width: $vp-768) {
-    padding: 75px 50px 80px 52px;
+    padding: 71px 50px 80px 52px;
   }
 
   @media (min-width: $vp-320) {
-    padding: 30px 25px 84px 25px;
+    padding: 30px 25px 77px 25px;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    padding-left: 245px;
+    padding-left: 225px;
   }
 
   @media (min-width: $vp-768) {
@@ -150,13 +150,14 @@
 
   @media (min-width: $vp-768) {
     padding: 14px 13px 14px 13px;
+    margin-top: -5px;
     width: 180px;
   }
 
   @media (min-width: $vp-320) {
     padding: 8px 13px 8px 13px;
     width: 160px;
-    margin-top: 10px;
+    margin-top: -5px;
   }
 }
 

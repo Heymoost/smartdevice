@@ -10,6 +10,7 @@ function openModal() {
   wrapper.classList.remove('wrapper--closed');
   wrapper.classList.add('wrapper--opened');
   wrapper.classList.add('overlay');
+  wrapper.setAttribute('inert', 0);
 }
 
 function closeModal() {
@@ -18,6 +19,7 @@ function closeModal() {
   wrapper.classList.add('wrapper--closed');
   wrapper.classList.remove('wrapper--opened');
   wrapper.classList.remove('overlay');
+  wrapper.removeAttribute('inert');
 }
 
 function openModalTarget(e) {
@@ -44,6 +46,7 @@ function closeModalTarget(e) {
     modal.classList.add('modal--closed');
     modal.classList.remove('modal--opened');
     wrapper.classList.remove('overlay');
+    wrapper.removeAttribute('inert');
   }
 }
 

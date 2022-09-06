@@ -4,6 +4,8 @@
 
 
   @media (min-width: $vp-1024) {
+    max-width: 345px;
+    width: 100%;
     padding-top: 5px;
   }
 
@@ -17,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 22px 5px 20px 25px;
+    padding: 22px 5px 5px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     cursor: pointer;
   }
@@ -244,7 +246,7 @@
 
 
   @media (min-width: $vp-768) {
-    width: 345px;
+
     padding-bottom: 0;
     font-weight: 400;
     font-size: 16px;
