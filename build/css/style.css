@@ -765,6 +765,10 @@ input[type="checkbox"]:checked + .modal__control-checkbox::before {
   background-color: #f8fdff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -1666,7 +1670,7 @@ footer {
   .social__list {
     padding: 0;
     margin-top: 17px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1678,9 +1682,12 @@ footer {
   }
 
   .link {
-    padding: 20px 5px 20px 25px;
+    padding: 20px 5px 0 25px;
+    min-height: 60px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     cursor: pointer;
   }
 
@@ -1783,6 +1790,7 @@ footer {
     box-sizing: content-box;
     min-height: 150px;
     padding-top: 20px;
+    padding-bottom: 5px;
   }
 
   .accord--oppened .link__list {
@@ -1804,7 +1812,8 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 22px 5px 20px 25px;
+    min-height: 60px;
+    padding: 22px 5px 0 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     cursor: pointer;
   }
@@ -1907,7 +1916,8 @@ footer {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     min-height: 150px;
-    padding-top: 20px;
+    padding-top: 17px;
+    padding-bottom: 5px;
   }
 
   .accord--oppened .contacts__list {
@@ -1915,11 +1925,11 @@ footer {
   }
 
   .contacts__list-item {
-    padding-bottom: 7px;
+    padding-bottom: 6px;
   }
 
   .contacts p {
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -2256,6 +2266,8 @@ footer {
   .link {
     padding: 0;
     border: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
   }
 
   .link__button {
@@ -2503,6 +2515,7 @@ footer {
     max-width: 550px;
     width: 100%;
     padding-top: 12px;
+    padding-right: 30px;
   }
 
   .feedback h2 {
@@ -2602,6 +2615,7 @@ footer {
 
   .contacts {
     max-width: 345px;
+    min-width: 175px;
     width: 100%;
     padding-top: 5px;
   }

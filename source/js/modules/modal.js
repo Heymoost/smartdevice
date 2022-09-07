@@ -66,3 +66,12 @@ document.addEventListener('click', (e) => {
 document.addEventListener('click', (e) => {
   closeModalTarget(e);
 });
+
+const isTabKey = (e) => e.key === 'Tab';
+
+modalBtn.addEventListener('keydown', (e) => {
+  if (isTabKey(e)) {
+    e.preventDefault();
+    inputName.focus();
+  }
+});

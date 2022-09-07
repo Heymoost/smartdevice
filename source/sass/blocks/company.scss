@@ -143,6 +143,7 @@
   background-color: #f8fdff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
+  user-select: none;
   cursor: pointer;
 
   @media (min-width: $vp-1024) {
