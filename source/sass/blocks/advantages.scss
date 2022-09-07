@@ -49,7 +49,7 @@
 
   @media (min-width: $vp-320) {
     max-height: 100%;
-    padding: 30px 25px 74px 30px;
+    padding: 30px 25px 35px 30px;
   }
 }
 
@@ -114,9 +114,35 @@
   }
 
   @media (min-width: $vp-320) {
-    min-height: 110px;
+    min-height: 190px;
     font-size: 14px;
     line-height: 135%;
+  }
+}
+
+.advantages__item-small h3 {
+  @media (min-width: $vp-768) {
+    padding: 5px 0 5px 0;
+  }
+
+  @media (min-width: $vp-320) {
+    line-height: 28px;
+    padding: 10px 0 15px 0;
+  }
+}
+
+.advantages__item-small p {
+  @media (min-width: $vp-1024) {
+    min-height: 140px;
+  }
+
+  @media (min-width: $vp-768) {
+    min-height: 165px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $vp-320) {
+    min-height: 140px;
   }
 }
 

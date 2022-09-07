@@ -1457,7 +1457,7 @@ footer {
 
   .advantages__item {
     max-height: 100%;
-    padding: 30px 25px 74px 30px;
+    padding: 30px 25px 35px 30px;
   }
 
   .advantages__item-svg {
@@ -1473,13 +1473,22 @@ footer {
   }
 
   .advantages p {
-    min-height: 110px;
+    min-height: 190px;
     font-size: 14px;
     line-height: 135%;
   }
 
+  .advantages__item-small h3 {
+    line-height: 28px;
+    padding: 10px 0 15px 0;
+  }
+
+  .advantages__item-small p {
+    min-height: 140px;
+  }
+
   .company__list {
-    padding: 30px 25px 77px 25px;
+    padding: 30px 25px 78px 25px;
   }
 
   .company img {
@@ -1568,7 +1577,7 @@ footer {
   }
 
   .feedback__conteiner {
-    padding: 45px 25px 86px 25px;
+    padding: 45px 25px 88px 25px;
   }
 
   .feedback__conteiner img {
@@ -1690,8 +1699,8 @@ footer {
 
   .accord--closed .link__button {
     position: absolute;
-    top: -13px;
-    right: 10px;
+    top: -15px;
+    right: 5px;
     display: block;
     padding: 0;
     width: 100%;
@@ -1733,8 +1742,8 @@ footer {
 
   .accord--oppened .link__button {
     position: absolute;
-    top: -13px;
-    right: 10px;
+    top: -15px;
+    right: 5px;
     display: block;
     padding: 0;
     width: 100%;
@@ -1795,7 +1804,7 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 22px 5px 5px 25px;
+    padding: 22px 5px 20px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     cursor: pointer;
   }
@@ -1815,8 +1824,8 @@ footer {
 
   .accord--closed .contacts__button {
     position: absolute;
-    top: -13px;
-    right: 10px;
+    top: -15px;
+    right: 5px;
     display: block;
     padding: 0;
     width: 100%;
@@ -1858,8 +1867,8 @@ footer {
 
   .accord--oppened .contacts__button {
     position: absolute;
-    top: -13px;
-    right: 10px;
+    top: -15px;
+    right: 5px;
     display: block;
     padding: 0;
     width: 100%;
@@ -2044,6 +2053,15 @@ footer {
     line-height: 22px;
   }
 
+  .advantages__item-small h3 {
+    padding: 5px 0 5px 0;
+  }
+
+  .advantages__item-small p {
+    min-height: 165px;
+    padding-right: 20px;
+  }
+
   .company__list {
     padding: 71px 50px 80px 52px;
   }
@@ -2062,6 +2080,7 @@ footer {
 
   .company h2 {
     padding-bottom: 14px;
+    padding-top: 5px;
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
@@ -2417,6 +2436,10 @@ footer {
     line-height: 22px;
   }
 
+  .advantages__item-small p {
+    min-height: 140px;
+  }
+
   .company__list {
     padding: 120px 20px 121px 65px;
   }
@@ -2435,6 +2458,7 @@ footer {
 
   .company h2 {
     padding-bottom: 10px;
+    padding-top: 0;
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
