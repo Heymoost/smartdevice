@@ -129,18 +129,10 @@ const optimizeImages = () => {
       .pipe(gulp.dest('build/img'));
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp, optimizeImages, syncServer);
+const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp, optimizeImages);
 
 const start = gulp.series(clean, svgo, copy, css, sprite, js, syncServer);
 
-// Optional tasks
-//---------------------------------
-
-// Используйте отличное от дефолтного значение root, если нужно обработать отдельную папку в img,
-// а не все изображения в img во всех папках.
-
-// root = '' - по дефолту webp добавляются и обновляются во всех папках в source/img/
-// root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 exports.imagemin = optimizeImages;
 exports.webp = createWebp;
